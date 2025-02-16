@@ -1,5 +1,7 @@
 import React from 'react'
 import { landingdata } from '../../constant/Landingdata'
+import { HiOutlineMail } from "react-icons/hi";
+import { FaPhoneVolume } from "react-icons/fa";
 
 const Landing = () => {
   return (
@@ -82,6 +84,21 @@ const Landing = () => {
     <p>{landingdata.item5}</p>
     <p>{landingdata.item6}</p>
     <p>{landingdata.item7}</p>
+  </div>
+  <div className='contact'>
+  <h4>{landingdata.footersubhead3}</h4>
+    <div className='subcontact'>
+         <HiOutlineMail className='icon'/>
+       <p>{landingdata.email}</p>
+    </div>
+    <div className='subcontact'>
+       <FaPhoneVolume className='icon'/>
+       <p>{landingdata.phone1}</p>
+    </div>
+    <div className='subcontact'>
+        <FaPhoneVolume className='icon'/>
+    <p>{landingdata.phone2}</p>
+    </div>
   </div>
   <div className='industriescontant'>
     <h4>{landingdata.footersubhead2}</h4>

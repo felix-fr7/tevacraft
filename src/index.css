@@ -312,6 +312,29 @@ img.icone3{
     padding: 9px;
     font-size: 1.2rem;
 }
+.contact{
+    margin-top: 20px;
+    text-align: center;
+    padding: 0px;
+    align-items: center;
+}
+.subcontact{
+    text-align: left;
+    padding: 0;
+   
+}
+.icon{
+    display: flex;
+    position: relative;
+    top: 40px;
+    flex-direction: column;
+    justify-content: center;
+}
+.subcontact p{
+    
+    font-size: 1.4rem;
+    text-align: left;
+}
 .industriescontant{
     margin-top: 20px;
     text-align: center;
@@ -354,48 +377,7 @@ img.icone3{
         align-items: center;
     }
 }
-@media screen and (max-width: 514px){
-    .containerhero h2.welcome{
-        font-size: 4rem;
-        padding: 10px;
-    }
-    .footertext h2{
-        font-size: 2rem;
-        padding: 10px;
-    }
-    .subheading h2{
-        font-size: 4rem;
-        padding: 10px;
-    }
-    .ai{
-        font-size: 4rem;
-    }
-    .whychoose{
-        font-size: 3rem;
-        padding: 10px;
-
-    }
-    .whychoose h2{
-        font-size: 3rem;
-
-    }
-    .booknowbutton{
-        width: 300px;
-        height: 50px;
-        border-radius: 77px;
-        background-color: var(--white-color);
-        color: #0B0B0B;
-        font-weight: 900;
-        font-size: 12px;
-        border: none;
-        align-items: center;
-    }
-    .imgsection img{
-        width: 100%;
-        object-fit: contain;
-    }
-}
-@media screen and (max-width: 320px){
+@media screen and (max-width: 380px){
     .logo{
         width: 40px;
     }
@@ -479,6 +461,225 @@ img.icone3{
         border: none;
         align-items: center;
     }
-  
+}
+@media screen and (max-width: 670px){
+      .contact p{
+        font-size: 0.9rem; 
+      }
+      .footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;    
+      }
+      .contact p{
+        text-align: center;
+        
+      }
+      .whowearecontant p{
+        text-align: center;
+      }
+      .industriescontant p{
+        text-align: center;
+      }
 
+}
+@media screen and (max-width: 480px){
+    .contact p{
+        
+      }
+      .whowearecontant p{
+        padding: 0;
+
+        text-align: center;
+      }
+      .industriescontant p{
+        padding: 0;
+      }
+    .footercontainer{
+        display: flex;
+        flex-direction: column;  
+  }
+    .logo{
+        width: 40px;
+    }
+    .topnavdrop{
+        min-width: 300px !important;
+    }
+    .dropdown-menu{
+        width: 300px!important;
+    }
+    .containerhero h2.welcome{
+        font-size: 2rem;
+    }
+    .navbar-nav{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .ai{
+        font-size: 2rem;
+    }
+    .containerhero2 p.welcomepara{
+        font-size: 0.9rem;
+    }
+    
+    .whychoose{
+        font-size: 2rem;
+    }
+    .subheading h2{
+        font-size: 2rem;
+    }
+    .subheading p{
+        font-size: 0.9rem;
+    }
+    .whychoose h2{
+        font-size: 2rem;
+    }
+    .footercontainer{
+        padding-top: 20px;
+    }
+    .footercontainer p{
+        font-size: 12px;
+    }
+    .footercontainer h2{
+        font-size: 2rem;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact p{
+        font-size: 0.9rem;
+
+    }
+    .footertext{
+        padding-bottom: 30px;
+    }
+    .footertext p{
+        font-size: 0.9rem;
+    }
+    .footertext h2{
+        font-size: 2rem;
+    }
+    .footertext h4{
+        font-size: 0.6rem;
+    }
+    .iconecontainer p{
+        font-size: 0.9rem;
+    }
+    .iconecontainer img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .imgsection{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .imgsection img{
+        width: 50%;
+        height: 250px;
+        object-fit: contain;
+    }
+    .paramcontainer p{
+        font-size: 0.9rem;
+    }
+    .booknowbutton{
+        width: 200px;
+        height: 30px;
+        border-radius: 77px;
+        background-color: var(--white-color);
+        color: #0B0B0B;
+        font-weight: 900;
+        font-size: 12px;
+        border: none;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 320px){
+    .logo{
+        width: 40px;
+    }
+    .topnavdrop{
+        min-width: 300px !important;
+    }
+    .dropdown-menu{
+        width: 300px!important;
+    }
+    .containerhero h2.welcome{
+        font-size: 2rem;
+    }
+    .navbar-nav{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .ai{
+        font-size: 2rem;
+    }
+    .containerhero2 p.welcomepara{
+        font-size: 0.9rem;
+    }
+    
+    .whychoose{
+        font-size: 2rem;
+    }
+    .subheading h2{
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+    .subheading p{
+        font-size: 0.9rem;
+    }
+    .whychoose h2{
+        font-size: 2rem;
+    }
+    .footercontainer{
+        padding-top: 20px;
+    }
+    .footercontainer p{
+        font-size: 12px;
+    }
+    .footercontainer h2{
+        font-size: 2rem;
+
+    }
+    .footertext{
+        padding-bottom: 30px;
+    }
+    .footertext p{
+        font-size: 0.9rem;
+    }
+    .iconecontainer p{
+        font-size: 0.9rem;
+    }
+    .iconecontainer img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .imgsection{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .imgsection img{
+        width: 50%;
+        height: 250px;
+        object-fit: contain;
+    }
+    .paramcontainer p{
+        font-size: 0.9rem;
+    }
+    .booknowbutton{
+        width: 200px;
+        height: 30px;
+        border-radius: 77px;
+        background-color: var(--white-color);
+        color: #0B0B0B;
+        font-weight: 900;
+        font-size: 12px;
+        border: none;
+        align-items: center;
+    }
 }
