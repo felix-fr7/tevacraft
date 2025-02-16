@@ -18,7 +18,7 @@ export const landingdata ={
     lineback:`${process.env.PUBLIC_URL}/assets/lineback.png`,
     // our expertise
     subheading:"Our Expertise",
-    heading2:"We focus on developing advanced AI agents tailored FOR",
+    heading2:"We focus on developing advanced AI agents tailored for",
     ourexpertise_paragraph:"Our AI agents are designed to seamlessly integrate into existing systems, providing intelligent automation, data-driven insights, and innovative problem-solving capabilities.",
     education:`${process.env.PUBLIC_URL}/assets/education.png`,
     entertainment:`${process.env.PUBLIC_URL}/assets/entertainment.png`,

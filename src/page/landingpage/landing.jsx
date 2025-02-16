@@ -89,7 +89,7 @@ const Landing = () => {
   <h4>{landingdata.footersubhead3}</h4>
     <div className='subcontact'>
          <HiOutlineMail className='icon'/>
-       <p>{landingdata.email}</p>
+       <p className='mail'>{landingdata.email}</p>
     </div>
     <div className='subcontact'>
        <FaPhoneVolume className='icon'/>
