@@ -69,8 +69,8 @@ const Landing = () => {
      <button className='booknowbutton'>{landingdata.booknow}</button>
     </div>
    </div>
-   <hr></hr>
-   <div className='mainform'>
+   {/* <hr></hr> */}
+   {/* <div className='mainform'>
     <h2 className='powerheading'>Register</h2>
     <div className='form'>
       <input placeholder='Entre your email' type='email'></input>
@@ -80,7 +80,7 @@ const Landing = () => {
       <button>Submit</button>
       </div>
     </div>
-   </div>
+   </div> */}
    <hr/>
    <div className='footercontainer'>
    <h2>{landingdata.footerhead}</h2>
