@@ -1,13 +1,13 @@
 import React from 'react';
-import Topnav from './commponent/common/Topnav';
-import Landing from './page/landingpage/landing';
+import Route from './Route';
+
+
 
 
 function App() {
   return (
     <div>
-   <Topnav></Topnav>
-   <Landing></Landing>
+  <Route></Route>
     </div>
   );
 }

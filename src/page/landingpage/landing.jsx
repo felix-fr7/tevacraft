@@ -3,7 +3,9 @@ import { landingdata } from '../../constant/Landingdata'
 import { HiOutlineMail } from "react-icons/hi";
 import { FaPhoneVolume } from "react-icons/fa";
 
+
 const Landing = () => {
+  
   return (
     <div className='containerhero'>
       <div className='containerhero2'>
@@ -14,14 +16,11 @@ const Landing = () => {
       <div className='heromain'>
       <img className='heroimage' src={landingdata.heroimage} alt="" />
       <div className='side1'>
-
       </div>
       <div className='side2'>
 
       </div>
       </div>
-
-      
    
       {/* OUR EXPERTISE */}
       <div className='lineback'>
@@ -63,12 +62,23 @@ const Landing = () => {
     <p>{landingdata.answer5}</p>
     </div>
     </div>
- 
-  
+
     <div className='footertext'>
     <h2 className='footertext1'>{landingdata.footertext1}</h2>
       <p className='footertext2'>{landingdata.footertext2}</p>
-      <button className='booknowbutton'>{landingdata.booknow}</button>
+     <button className='booknowbutton'>{landingdata.booknow}</button>
+    </div>
+   </div>
+   <hr></hr>
+   <div className='mainform'>
+    <h2 className='powerheading'>Register</h2>
+    <div className='form'>
+      <input placeholder='Entre your email' type='email'></input>
+      <input placeholder='Enter Your Name' type='text'></input>
+      <input type='text' placeholder='Your Work or Assignment'></input>
+      <div className='submit'>
+      <button>Submit</button>
+      </div>
     </div>
    </div>
    <hr/>
@@ -110,10 +120,7 @@ const Landing = () => {
   </div>
   </div>
    </div>
-   </div>
-        
-   
+   </div> 
   )
 }
-
 export default Landing

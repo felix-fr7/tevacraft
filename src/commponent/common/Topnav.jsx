@@ -3,15 +3,16 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { navdata } from '../../constant/Nav';
+
 function Topnav() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary px-5">
-    <Navbar.Brand href="#home"><img src={navdata.image} className="logo" alt="" /></Navbar.Brand>
+    <Navbar.Brand href="/"><img src={navdata.image} className="logo" alt="" /></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
       <Nav>
-        <NavDropdown title="What we do" id="basic-nav-dropdown" className='topnavdrop'>
-          <NavDropdown.Item href="#action/3.1"className='navfont'>AI Services for Translation requirements</NavDropdown.Item>
+        <NavDropdown title="Who we are" id="basic-nav-dropdown" className='topnavdrop'>
+         <NavDropdown.Item href="/aiservice"className='navfont'>AIServices for Translation<br/>requirements</NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2">
           Human Translation 
           </NavDropdown.Item>
