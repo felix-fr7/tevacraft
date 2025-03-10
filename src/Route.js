@@ -3,6 +3,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import Tapnav from './commponent/common/Topnav'
 import Home from './page/landingpage/Home'
 import Landing from './page/landingpage/landing'
+import Human from './page/who we are/Human'
 
 const route = () => {
   return (
@@ -12,6 +13,7 @@ const route = () => {
       <Routes>
         <Route path='/' element={<Landing/>}></Route>
         <Route path='/aiservice' element={<Home/>}></Route>
+        <Route path='/human' element ={<Human/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>

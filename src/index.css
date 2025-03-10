@@ -23,6 +23,10 @@
     border-radius: 10px;
     cursor: pointer;
 }
+hr{
+    padding: 0px;
+    margin: 0px;
+}
 .bg-body-tertiary{
     background-color: var(--secondary-color)!important;
 }
@@ -632,13 +636,13 @@ img.icone3{
         border: none;
     }
     .submit button:hover{
-        width: 250px;
-        height: 72px;
-        border-radius: 20px;
+        width: 90px;
+        height: 25px;
+        border-radius: 10px;
         background-color: var(--white-color);
         color: var(--primary-color);
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 0.9rem;
     }
     .form .submit{
         text-align: center;
@@ -803,6 +807,12 @@ img.icone3{
   }
   .powerheading{
     font-size: 4.5rem;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+  }
+  .powerheadingh4{
+    font-size: 2.5rem;
     align-items: center;
     text-align: center;
     color: var(--white-color);
@@ -1154,4 +1164,123 @@ img.icone3{
         flex-direction: column;
     }
 
+  }
+  /* human -- start */
+  .humanmain{
+      background-color: var(--secondary-color);
+  }
+  .human1{
+    background: url(../public/assets/human\ back.png);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--white-color);
+    padding-top: 50px;
+    text-align: center;
+  }
+  .human2{
+    background: url(../public/assets/homeback.png);
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 650px;
+    color: var(--white-color);
+    text-align: center;
+  }
+  .human2sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    margin-left: 30px;
+  }
+  .human2sub img{
+    width: 300px;
+    height: 380px;
+    border-radius: 20px;
+  }
+  .human2country{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    margin-left: 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background: linear-gradient(rgba(204, 49, 173, 0.2), rgba(169, 63, 111, 0.3));
+
+  }
+  .country h4{
+    padding: 10px;
+    text-align: left;
+  }
+  .lang p{
+    padding: 10px;
+    text-align: left;
+  }
+
+  .human3{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+  }
+  .human3 h2{
+    margin-top: 20px;
+  }
+  .human3sub{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    color: var(--white-color);
+  }
+  .humantranslat{
+    padding: 30px;
+    background: linear-gradient(rgba(204, 49, 173, 0.2), rgba(123, 21, 124, 0.468));
+    border-radius: 5px;
+
+  }
+  .post-editing{
+    padding: 30px;
+    background: linear-gradient(rgba(204, 49, 173, 0.2), rgba(123, 21, 124, 0.468));
+    border-radius: 5px;
+    margin-left: 5px;
+
+
+  }
+  /* why choose */
+  .whyhead{
+    border-radius: 5px;
+    background: linear-gradient(rgba(204, 49, 173, 0.2), rgba(169, 63, 111, 0.3));
+    margin-left: 50px;
+    margin-right: 90px;
+  }
+  .powerheadingh4{
+    margin: 20px;
+    margin-bottom: 30px;
+  }
+  .whyhead h4{
+    margin-left: 10px;
+    padding: 10px;
+  }
+  .whyhead p{
+    margin-left: 10px;
+  }
+  .flexdiv{
+    display: flex;
+    margin-top: 20px;
+  }
+  .whyphone img{
+    width: 500px;
+  }
+  /* industries we  */
+  .flexhuman4{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .flexhuman4 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
   }
