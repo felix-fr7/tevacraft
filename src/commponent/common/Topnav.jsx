@@ -3,8 +3,25 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { navdata } from '../../constant/Nav';
-
+import { useForm } from 'react-hook-form';
+import axios from 'axios';
+import { useState } from 'react';
 function Topnav() {
+  const {formState:{errors},register,handleSubmit} = useForm()
+
+  const onSubmit = async(data)=>{
+      try {
+        const response =await axios.post('https://tevabackend.onrender.com/register/postdetails',data)
+        console.log(response.data)
+
+        
+      } catch (error) {
+        console.log(error)  
+      }
+  }
+  
+  const [openpopup,setopenpopup] = useState(false)
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary px-5">
     <Navbar.Brand href="/"><img src={navdata.image} className="logo" alt="" /></Navbar.Brand>
@@ -41,6 +58,26 @@ function Topnav() {
           <hr></hr>
           <NavDropdown.Item href="#action/3.5">Software Localization</NavDropdown.Item>
         </NavDropdown>
+        <button onClick={()=>setopenpopup(true)}>Rigister</button>
+        {
+          openpopup &&
+        <div className='popup'>
+          <div className="popup-container">
+          <div className='mainform'>
+    <h2 className='powerheading' style={{color:'#B96CFD'}}>Register</h2>
+    <div className='form'>
+      <i class="fa-solid fa-xmark" onClick={()=> setopenpopup(false)}></i>
+      <input placeholder='Entre your email' type='email' {...register('email')}></input>
+      <input placeholder='Enter Your Name' type='text' {...register('name')}></input>
+      <input type='text' placeholder='Your Work or Assignment  ' {...register('work')}></input>
+      <div className='submit' onClick={handleSubmit(onSubmit)}>
+      <button>Submit</button> 
+      </div>
+    </div>
+   </div>
+          </div>
+        </div>
+      }
       </Nav>
     </Navbar.Collapse>
   </Navbar>

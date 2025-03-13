@@ -15,7 +15,7 @@ const Human = () => {
               <h2 className='powerheading'>{Humandata.langhead}</h2>
               <p className='powerpara'>{Humandata.langpara}</p>
               <div className='human2sub'>
-                <div>
+                <div className='human2img'>
                   <img src={Humandata.brain} alt=''></img>
                 </div>
                 <div className='human2country'>
@@ -78,22 +78,32 @@ const Human = () => {
 
              </div>
              </div>
+             <hr></hr>
              <div className='human4'>
               <h2 className='powerheading'>{Humandata.wehead}</h2>
               <div className='flexhuman4'>
-              <div >
+
+              <div className='human4sub1' >
                 <h6>{Humandata.wehead1}</h6>
                 <h6>{Humandata.wehead2}</h6>
                 <h6>{Humandata.wehead3}</h6>
               </div>
+              
               <div>
-                {/* <img src={Humandata.boy}></img> */}
+                <img src={Humandata.boy} alt=''></img>
               </div>
-              <div >
+
+              <div className='human4sub2'>
                 <h6>{Humandata.wehead4}</h6>
                 <h6>{Humandata.wehead5}</h6>
                 <h6>{Humandata.wehead6}</h6>
               </div>
+
+              </div>
+
+              <div className='human4goal'>
+                <h2>{Humandata.goalhead}</h2>
+                <p>{Humandata.goalpara}</p>
               </div>
 
              </div>

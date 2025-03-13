@@ -11,7 +11,7 @@ const Landing = () => {
 
   const onSubmit = async(data)=>{
       try {
-        const response =await axios.post('http://localhost:8000/register/postdetails',data)
+        const response =await axios.post('https://tevabackend.onrender.com/register/postdetails',data)
         console.log(response.data)
 
         
@@ -82,6 +82,7 @@ const Landing = () => {
    <div className='mainform'>
     <h2 className='powerheading'>Register</h2>
     <div className='form'>
+      <i class="fa-solid fa-xmark"></i>
       <input placeholder='Entre your email' type='email' {...register('email')}></input>
       <input placeholder='Enter Your Name' type='text' {...register('name')}></input>
       <input type='text' placeholder='Your Work or Assignment  ' {...register('work')}></input>
@@ -90,7 +91,7 @@ const Landing = () => {
       </div>
     </div>
    </div>
-   <hr/>
+  
    <div className='footercontainer'>
    <h2>{landingdata.footerhead}</h2>
    <div className='footer'>
