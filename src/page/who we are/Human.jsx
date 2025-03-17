@@ -89,7 +89,7 @@ const Human = () => {
                 <h6>{Humandata.wehead3}</h6>
               </div>
               
-              <div>
+              <div className='human4img'>
                 <img src={Humandata.boy} alt=''></img>
               </div>
 

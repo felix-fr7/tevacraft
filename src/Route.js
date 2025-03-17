@@ -4,6 +4,7 @@ import Tapnav from './commponent/common/Topnav'
 import Home from './page/landingpage/Home'
 import Landing from './page/landingpage/landing'
 import Human from './page/who we are/Human'
+import Mtaudits from './page/who we are/Mtaudits'
 
 const route = () => {
   return (
@@ -14,6 +15,7 @@ const route = () => {
         <Route path='/' element={<Landing/>}></Route>
         <Route path='/aiservice' element={<Home/>}></Route>
         <Route path='/human' element ={<Human/>}></Route>
+        <Route path='/mtaudits' element={<Mtaudits/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>

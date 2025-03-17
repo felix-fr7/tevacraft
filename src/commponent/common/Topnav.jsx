@@ -6,9 +6,10 @@ import { navdata } from '../../constant/Nav';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { useState } from 'react';
-function Topnav() {
-  const {formState:{errors},register,handleSubmit} = useForm()
 
+function Topnav() {
+  // mail function start
+  const {formState: {errors},register,handleSubmit} = useForm()
   const onSubmit = async(data)=>{
       try {
         const response =await axios.post('https://tevabackend.onrender.com/register/postdetails',data)
@@ -19,9 +20,21 @@ function Topnav() {
         console.log(error)  
       }
   }
-  
+  // mail function end
+// popup
   const [openpopup,setopenpopup] = useState(false)
-
+  // popup
+  // dropdown
+  const[value,setvalue] = useState('')
+  const options =[
+    {label:"felix",value:1},
+    {label:"muthu",value:2},
+    {label:"thanga",value:3},
+    {label:"natha",value:4},
+  ]
+  function handleSelect(event){
+    setvalue(event.target.value)
+  }
   return (
     <Navbar expand="lg" className="bg-body-tertiary px-5">
     <Navbar.Brand href="/"><img src={navdata.image} className="logo" alt="" /></Navbar.Brand>
@@ -35,7 +48,7 @@ function Topnav() {
           Human Translation 
           </NavDropdown.Item>
           <hr></hr>
-          <NavDropdown.Item href="#action/3.3">MT Audits</NavDropdown.Item>
+          <NavDropdown.Item href="/mtaudits">MT Audits</NavDropdown.Item>
           <hr></hr>
           <NavDropdown.Item href="#action/3.4">Transcription</NavDropdown.Item>
           <hr></hr>
@@ -58,7 +71,7 @@ function Topnav() {
           <hr></hr>
           <NavDropdown.Item href="#action/3.5">Software Localization</NavDropdown.Item>
         </NavDropdown>
-        <button onClick={()=>setopenpopup(true)}>Rigister</button>
+        <button className='register-btn' onClick={()=>setopenpopup(true)}>Rigister</button>
         {
           openpopup &&
         <div className='popup'>
@@ -69,13 +82,24 @@ function Topnav() {
       <i class="fa-solid fa-xmark" onClick={()=> setopenpopup(false)}></i>
       <input placeholder='Entre your email' type='email' {...register('email')}></input>
       <input placeholder='Enter Your Name' type='text' {...register('name')}></input>
-      <input type='text' placeholder='Your Work or Assignment  ' {...register('work')}></input>
+      <input type='text' placeholder='Enter your work' {...register('work')}></input>
+
+      <div className='d-flex justify-content-center mt-5'>
+        <div className='w-50 p-3 border rounded'>
+          <select onChange={handleSelect}>
+            {options.map(options => (
+            <option>{options.label}</option>   
+            ))}
+          </select>
+        </div>
+
+      </div>
       <div className='submit' onClick={handleSubmit(onSubmit)}>
-      <button>Submit</button> 
+      <button onClick={()=>setopenpopup(false)}>Submit</button> 
       </div>
     </div>
    </div>
-          </div>
+     </div>
         </div>
       }
       </Nav>

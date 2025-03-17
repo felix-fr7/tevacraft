@@ -1,25 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { landingdata } from '../../constant/Landingdata'
 import { HiOutlineMail } from "react-icons/hi";
 import { FaPhoneVolume } from "react-icons/fa";
-import { useForm } from 'react-hook-form';
-import axios from 'axios';
 
-const Landing = () => {
 
-  const {formState:{errors},register,handleSubmit} = useForm()
-
-  const onSubmit = async(data)=>{
-      try {
-        const response =await axios.post('https://tevabackend.onrender.com/register/postdetails',data)
-        console.log(response.data)
-
-        
-      } catch (error) {
-        console.log(error)  
-      }
-  }
-  
+const Landing = () => {  
   return (
     <div className='containerhero'>
       <div className='containerhero2'>
@@ -79,18 +64,6 @@ const Landing = () => {
 
    </div>
    <hr></hr>
-   <div className='mainform'>
-    <h2 className='powerheading'>Register</h2>
-    <div className='form'>
-      <i class="fa-solid fa-xmark"></i>
-      <input placeholder='Entre your email' type='email' {...register('email')}></input>
-      <input placeholder='Enter Your Name' type='text' {...register('name')}></input>
-      <input type='text' placeholder='Your Work or Assignment  ' {...register('work')}></input>
-      <div className='submit' onClick={handleSubmit(onSubmit)}>
-      <button>Submit</button> 
-      </div>
-    </div>
-   </div>
   
    <div className='footercontainer'>
    <h2>{landingdata.footerhead}</h2>

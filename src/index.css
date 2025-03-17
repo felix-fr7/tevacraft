@@ -27,6 +27,27 @@ hr{
     padding: 0px;
     margin: 0px;
 }
+button.navbar-toggler.collapsed{
+    background-color: var(--white-color);
+}
+button.navbar-toggler{
+    background-color: var(--white-color);
+}
+.register-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    color: #0B0B0B;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    align-items: center;
+}
+.register-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
 .bg-body-tertiary{
     background-color: var(--secondary-color)!important;
 }
@@ -72,32 +93,51 @@ hr{
 .form{
     display: flex;
     flex-direction: column;
-    padding: 0px 90px 20px 90px;
+    padding: 20px 90px 20px 90px;
 }
+.form i{
+    cursor: pointer;
+    width: 13px;
+}
+.form i:hover{
+    display: inline-block;
+    color: var(--primary-color );
+    animation: spin 2s linear infinite;
+}
+@keyframes spin{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 .form input{
     margin-top: 30px;
     padding: 15px;
+    padding-right: 90px;
     border-radius: 10px;
     border: 1px solid var(--primary-color);
 }
 .form button{
     margin-top: 20px;
-    width: 200px;
+    width: 100px;
     height: 42px;
-    border-radius: 77px;
+    border-radius: 5px;
     margin-top: 25px;
-    background-color: var(--primary-color);
+    background-color: var(--white-color);
     color: #0B0B0B;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.3rem;
     border: none;
 }
 .submit button:hover{
-    width: 200px;
+    width: 100px;
     height: 42px;
-    border-radius: 20px;
-    background-color: var(--white-color);
-    color: var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     font-weight: 500;
     font-size: 1.3rem;
 }
@@ -214,7 +254,6 @@ hr{
 .iconecontainer{
     display: flex;
     justify-content: space-between;
-    /* margin-top: 40px; */
     padding: 20px;
     gap: 10px;
 }
@@ -637,10 +676,10 @@ img.icone3{
         margin-top: 20px;
         width: 100px;
         height: 32px;
-        border-radius: 77px;
+        border-radius: 5px;
         margin-top: 25px;
-        background-color: var(--primary-color);
-        color: #0B0B0B;
+        background-color: var(--white-color);
+        color:var(--black-color);
         font-weight: 500;
         font-size: 1.2rem;
         border: none;
@@ -648,9 +687,9 @@ img.icone3{
     .submit button:hover{
         width: 90px;
         height: 25px;
-        border-radius: 10px;
-        background-color: var(--white-color);
-        color: var(--primary-color);
+        border-radius: 5px;
+        background-color: var(--primary-color);
+        color: var(--white-color);
         font-weight: 500;
         font-size: 0.9rem;
     }
@@ -946,6 +985,16 @@ img.icone3{
 .accordion-header{
    padding-bottom: 0% !important;
 }
+button.accordion-button.collapsed::after{
+    margin-right:10px ;
+    background-color: var(--white-color);
+    border-radius: 2px;
+}
+button.accordion-button::after{
+    margin-right:10px ;
+    background-color: var(--white-color);
+    border-radius: 50px;
+}
 /* process */
 .process{
     background: url("../public/assets/homeback.png");
@@ -1240,6 +1289,7 @@ img.icone3{
     display: flex;
     padding: 10px;
     text-align: center;
+    gap: 20px;
     justify-content: center;
     color: var(--white-color);
   }
@@ -1456,32 +1506,32 @@ img.icone3{
     .flexhuman4{
       display: flex;
       align-items: center;
+      flex-direction: column;
       text-align: center;
       justify-content: center;
-    }
-    .flexhuman4 img{
-      width: 300px;
-      height: 300px;
-      border-radius: 30px;
     }
     .flexhuman4 h6{
       margin-top: 10px;
       margin-bottom: 10px;
+      font-size: 0.8rem;
       background: linear-gradient(rgba(204, 49, 173, 0.2), rgba(169, 63, 111, 0.3));
       padding: 20px;
       color: var(--white-color);
       border-radius: 5px;
     }
+    .human4img img{
+      display: none;
+    }
     .human4sub1{
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 10px;
       padding: 50px;
     }
     .human4sub2{
       display: flex;
       flex-direction: column;
-      gap: 50px;
+      gap: 10px;
       padding: 50px;
     }
     .human4goal{
@@ -1499,4 +1549,7 @@ img.icone3{
    }
 
   }
+  /* end human */
+  /* strat MT audits */
+  
 
