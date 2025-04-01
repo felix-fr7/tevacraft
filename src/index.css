@@ -34,11 +34,13 @@ button.navbar-toggler{
     background-color: var(--white-color);
 }
 .register-btn{
-    width: 100px;
-    height: 30px;
+    width: 200px;
+    height: 35px;
     border-radius: 5px;
     background-color: var(--white-color);
     color: #0B0B0B;
+    text-align: center;
+    margin-left: 5px;
     font-weight: 600;
     font-size: 1.1rem;
     border: none;
@@ -48,6 +50,64 @@ button.navbar-toggler{
     background-color: var(--primary-color);
     color: var(--white-color);
 }
+/* signup */
+.signupcontainer{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--secondary-color);
+}
+.boxcontainer{
+    display: flex;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--white-color);
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px 10px #B96CFD;
+}
+.boxcontainer button{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 1px solid #B96CFD;
+    margin: 10px;
+}
+.boxcontainer button:hover{
+    background-color: #B96CFD;
+    color: var(--white-color);
+}
+.boxcontainer h2{
+  font-size: 2.4rem;
+  margin-top: 10px;
+}
+.signitems{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #B96CFD;
+    margin: 10px;
+}
+.signupimg img{
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  margin: 30px;
+  box-shadow: 2px 2px 10px 10px #B96CFD;
+}
+.signflex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signincolor{
+  color:#0066cc;
+  cursor: pointer;
+}
+/* signend */
 .bg-body-tertiary{
     background-color: var(--secondary-color)!important;
 }
@@ -63,6 +123,9 @@ button.navbar-toggler{
      justify-content: space-between;
      align-items: center;
      background-color: var(--secondary-color);
+}
+.topnavdropteam{
+ color: #B96CFD !important;
 }
 .topnavdrop{
     min-width: 310px !important;
@@ -855,13 +918,13 @@ img.icone3{
     background: var(--secondary-color);
   }
   .powerheading{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     align-items: center;
     text-align: center;
     color: var(--white-color);
   }
   .powerheadingh4{
-    font-size: 2.5rem;
+    font-size: 2rem;
     align-items: center;
     text-align: center;
     color: var(--white-color);
@@ -869,12 +932,18 @@ img.icone3{
   .span{
     color: var(--primary-color);
     font-weight: 700;
-    display: flex;
+    text-align: center;
     justify-content: center;
-    font-size: 4.0rem;
+    font-size: 3.5rem;
   }
   .powerpara{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+  }
+  .smallpara{
+    font-size: 1.2rem;
     align-items: center;
     text-align: center;
     color: var(--white-color);
@@ -1085,9 +1154,10 @@ button.accordion-button::after{
       .span{
         color: var(--primary-color);
         font-weight: 700;
-        display: flex;
+        text-align: center;
+        align-items: center;
         justify-content: center;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
       .powerpara{
         font-size: 0.9rem;
@@ -1551,5 +1621,200 @@ button.accordion-button::after{
   }
   /* end human */
   /* strat MT audits */
-  
+  .mtcontainer{
+    background-color: var(--secondary-color);
+  }
+  .mthero{
+    background: url(../public/assets/mtback.png);
+    padding: 40px;
+  }
+  .mtcontainer2{
+    background: url(../public/assets/lineback.png);
+    padding: 20px;
+  }
+  /* ios */
+  .ioscontainer{
+    display: flex;
+  }
+  .ios{
+    padding: 20px;
+    background-color: var(--black-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .ios h4{
+    margin: 0px;
+  }
+.astm{
+    padding: 40px;
+}
+.abc{
+    display: flex;
+}
+.abcimg{
+  color: var(--primary-color);
+  margin: 10px;
+}
+.bar{
+    color: var(--primary-color);
+   margin: 10px;
 
+  }
+  .evalution{
+    display: flex;
+    margin-left: 90px;
+  }
+  .guide{
+    display: flex;
+  }
+  .leftarrow{
+    margin-left: 140px;
+    height: 120px;
+  }
+  .rightarrow{
+    margin-left: 100px;
+    height: 130px;
+  }
+  .astm{
+    background-color: var(--black-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 190px;
+    margin-bottom: 190px;
+    margin-right: 30px;
+  }
+  /* benefits */
+  .mtbenefit h2{
+    color: var(--primary-color);
+  }
+  .brain{
+    color: var(--primary-color);
+    margin: 10px;
+  }
+  .benifitflex{
+    display: flex;
+  }
+  .benifitpara{
+    background-color: var(--black-color);
+    margin: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+  }
+  .benifitpara p{
+    margin-left: 10px;
+    text-align: left;
+  }
+  .benifitflex{
+    display: flex;
+  }
+  /* end */
+  @media screen and (max-width: 580px){
+    .mtcontainer{
+      background-color: var(--secondary-color);
+      padding: 0px;
+    }
+    .mthero{
+      background: url(../public/assets/mtback.png);
+      padding: 20px;
+    }
+    .mtcontainer2{
+      background: url(../public/assets/lineback.png);
+      padding: 10px;
+    }
+    /* ios */
+    .ioscontainer{
+      display: flex;
+      flex-direction: column;
+    }
+    .ios{
+      padding: 20px;
+      background-color: var(--black-color);
+      border: 1px solid var(--primary-color);
+      border-radius: 5px;
+      margin: 10px;
+    }
+    .ios h4{
+      margin: 0px;
+      font-size: 1.3rem;
+    }
+  .astm{
+      padding: 40px;
+  }
+  .abc{
+      display: flex;
+      margin-top: 10px;
+  }
+  .abcimg{
+    color: var(--primary-color);
+    margin: 10px;
+  }
+  .bar{
+      color: var(--primary-color);
+       margin: 10px;
+  
+    }
+    .evalution{
+      display: flex;
+      margin-left: 90px;
+    }
+    .guide{
+      display: flex;
+    }
+    .leftarrow{
+      margin-left: 90px;
+      height: 100px;
+    }
+    .rightarrow{
+      margin-left: 60px;
+      height: 100px;
+    }
+    .astm{
+      background-color: var(--black-color);
+      border: 1px solid var(--primary-color);
+      border-radius: 5px;
+      margin: 10px;
+    }
+    /* benefits */
+    .mtbenefit h2{
+      color: var(--primary-color);
+    }
+    .mtbenefit img{
+      width: 200px;
+      height: 250px;
+      margin-left: 20px;
+    }
+    .brain{
+      color: var(--primary-color);
+      margin: 10px;
+    }
+    .benifitflex{
+      display: flex;
+      flex-direction: column;
+    }
+    .benifitflex h4{
+      font-size: 1.8rem;
+    }
+    .benifitpara p{
+      font-size: 1.1rem;
+     
+    }
+    .benifitpara{
+      background-color: var(--black-color);
+      margin: 20px;
+      border-radius: 5px;
+      border: 1px solid var(--primary-color);
+    }
+    .benifitpara p{
+      margin-left: 10px;
+      text-align: left;
+    }
+    .benifitflex{
+      display: flex;
+    } 
+    .cycle{
+      display: none;
+    }
+  }

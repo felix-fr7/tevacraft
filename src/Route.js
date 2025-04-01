@@ -5,6 +5,8 @@ import Home from './page/landingpage/Home'
 import Landing from './page/landingpage/landing'
 import Human from './page/who we are/Human'
 import Mtaudits from './page/who we are/Mtaudits'
+import Signup from './commponent/Signup'
+import Signin from './commponent/Signin'
 
 const route = () => {
   return (
@@ -16,6 +18,8 @@ const route = () => {
         <Route path='/aiservice' element={<Home/>}></Route>
         <Route path='/human' element ={<Human/>}></Route>
         <Route path='/mtaudits' element={<Mtaudits/>}></Route>
+        <Route path='/signup' element={<Signup/>}></Route>
+        <Route path='/signin' element={<Signin/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>

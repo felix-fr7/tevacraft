@@ -10,8 +10,8 @@ export const whychoose = `${process.env.PUBLIC_URL}/assets/robo.png`
 
 
 export const landingdata ={
-    heading: "Welcome to Tevacraft",
-    highlight: "AI Systems",
+    heading: "Empowering Words",
+    highlight: "Expanding Horizons",
     hero_section_paragraph: "At Tevacraft AI Systems, we're at the forefront of artificial intelligence innovation, specializing in AI generalization across diverse industries. Our cutting-edge technology and expert team are dedicated to creating versatile AI solutions that adapt and excel in multiple domains.",
     heroimage:`${process.env.PUBLIC_URL}/assets/hero.png`,
 

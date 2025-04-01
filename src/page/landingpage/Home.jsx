@@ -12,7 +12,7 @@ const Home = () => {
 
             <div className='powerhero'>
             <h2 className='powerheading'>{homedata.powertitle}</h2>
-            <span className='span'>{homedata.powertitle2}</span>
+            <h2 className='span'>{homedata.powertitle2}</h2>
             <p className='powerpara'>{homedata.powerpara}</p>
             <button className='bookfree'>Book A Free Consoultation</button>
             </div>

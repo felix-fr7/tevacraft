@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { useState } from 'react';
 
+
 function Topnav() {
   // mail function start
   const {formState: {errors},register,handleSubmit} = useForm()
@@ -35,6 +36,7 @@ function Topnav() {
   function handleSelect(event){
     setvalue(event.target.value)
   }
+  
   return (
     <Navbar expand="lg" className="bg-body-tertiary px-5">
     <Navbar.Brand href="/"><img src={navdata.image} className="logo" alt="" /></Navbar.Brand>
@@ -71,7 +73,9 @@ function Topnav() {
           <hr></hr>
           <NavDropdown.Item href="#action/3.5">Software Localization</NavDropdown.Item>
         </NavDropdown>
-        <button className='register-btn' onClick={()=>setopenpopup(true)}>Rigister</button>
+        <NavDropdown title="Join our translation team" id="basic-nav-dropdown" className='topnavdropteam'>
+          <NavDropdown.Item href="/signup" className='register-btn'>Register</NavDropdown.Item>
+        </NavDropdown>
         {
           openpopup &&
         <div className='popup'>
