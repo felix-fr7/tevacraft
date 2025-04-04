@@ -1,11 +1,26 @@
 import React from 'react'
 import { useState } from 'react'
 import { navdata } from '../constant/Nav'
+import { useForm } from 'react-hook-form'
+import axios from 'axios'
 
 
 
 
 const Signup = () => {
+    // mail function start
+    const {formState: {errors},register,handleSubmit} = useForm()
+    const onSubmit = async(data)=>{
+        try {
+          const response =await axios.post('https://tevabackend.onrender.com/register/postdetails',data)
+          console.log(response.data)
+  
+          
+        } catch (error) {
+          console.log(error)  
+        }
+    }
+    // mail function end
     const [value, setvalue] = useState('')
     const options = [
         { label: "Translator", value:"to become part of the tevacraft community"},
@@ -33,10 +48,10 @@ const Signup = () => {
                         </div>
                      </div>
 
-                    <input type="email" placeholder=' Enter your email' className='signitems' />
-                    <input type="password" placeholder=' Enter your password' className='signitems' />
+                    <input type="email" placeholder=' Enter your email' className='signitems' {...register('email')}/>
+                    <input type="password" placeholder=' Enter your password' className='signitems'{...register('password')} />
                     <input type='checkbox'></input>
-                    <button>Sign up</button>
+                    <button onClick={handleSubmit(onSubmit)}>Sign up</button>
                     <p>already have an account ?<span className='signincolor'><a href="/signin">login</a></span></p>
                 </div>
             </div>

@@ -10,17 +10,17 @@ import { useState } from 'react';
 
 function Topnav() {
   // mail function start
-  const {formState: {errors},register,handleSubmit} = useForm()
-  const onSubmit = async(data)=>{
-      try {
-        const response =await axios.post('https://tevabackend.onrender.com/register/postdetails',data)
-        console.log(response.data)
-
-        
-      } catch (error) {
-        console.log(error)  
-      }
-  }
+     const {formState: {errors},register,handleSubmit} = useForm()
+     const onSubmit = async(data)=>{
+         try {
+           const response =await axios.post('https://tevabackend.onrender.com/register/postdetails',data)
+           console.log(response.data)
+   
+           
+         } catch (error) {
+           console.log(error)  
+         }
+     }
   // mail function end
 // popup
   const [openpopup,setopenpopup] = useState(false)
