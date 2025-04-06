@@ -7,6 +7,7 @@ import Human from './page/who we are/Human'
 import Mtaudits from './page/who we are/Mtaudits'
 import Signup from './commponent/Signup'
 import Signin from './commponent/Signin'
+import Translateform from './commponent/Translateform'
 
 const route = () => {
   return (
@@ -20,6 +21,7 @@ const route = () => {
         <Route path='/mtaudits' element={<Mtaudits/>}></Route>
         <Route path='/signup' element={<Signup/>}></Route>
         <Route path='/signin' element={<Signin/>}></Route>
+        <Route path='/translate'element={<Translateform/>}></Route>
       </Routes>
       </BrowserRouter>
     </div>

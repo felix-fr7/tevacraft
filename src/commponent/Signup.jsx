@@ -23,7 +23,7 @@ const Signup = () => {
     // mail function end
     const [value, setvalue] = useState('')
     const options = [
-        { label: "Translator", value:"to become part of the tevacraft community"},
+        { label: "Translator", value1:"to become part of the tevacraft community"},
         { label: "customer", value:"to order translation" },
     ]
     function handleselect(event) {
@@ -41,10 +41,10 @@ const Signup = () => {
                         <div>
                             <select onChange={handleselect}>
                                 {options.map(options => (
-                                    <option value={options.value}>{options.label}</option>
+                                    <option value={options.value1}>{options.label}</option>
                                 ))}
                             </select>
-                            <p>{value}</p>
+                            <p><a href='/translate'>{value}</a></p>
                         </div>
                      </div>
 
