@@ -33,7 +33,7 @@ const Signup = () => {
         <div className='signupcontainer'>
             <div className='signflex'>
                 <div className='signupimg'>
-                    <img src={navdata.signup}></img>
+                    <img src={navdata.signup} alt=''></img>
                 </div>
                 <div className='boxcontainer'>
                     <h2 className='span'>Create an account us</h2>
@@ -49,7 +49,7 @@ const Signup = () => {
                      </div>
 
                     <input type="email" placeholder=' Enter your email' className='signitems' {...register('email')}/>
-                    <input type="password" placeholder=' Enter your password' className='signitems'{...register('password')} />
+                    <input type="password" placeholder=' Enter your password' className='signitems'{...register('password')}/>
                     <input type='checkbox'></input>
                     <button onClick={handleSubmit(onSubmit)}>Sign up</button>
                     <p>already have an account ?<span className='signincolor'><a href="/signin">login</a></span></p>
