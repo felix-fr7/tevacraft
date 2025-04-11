@@ -52,7 +52,7 @@ function Topnav() {
           <hr></hr>
           <NavDropdown.Item href="/mtaudits">MT Audits</NavDropdown.Item>
           <hr></hr>
-          <NavDropdown.Item href="#action/3.4">Transcription</NavDropdown.Item>
+          <NavDropdown.Item href="/transcription">Transcription</NavDropdown.Item>
           <hr></hr>
           <NavDropdown.Item href="#action/3.5">Video Localization&Subtitles</NavDropdown.Item>
           <hr></hr>
