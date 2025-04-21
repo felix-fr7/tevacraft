@@ -6,6 +6,8 @@ import Landing from './page/landingpage/landing'
 import Human from './page/who we are/Human'
 import Mtaudits from './page/who we are/Mtaudits'
 import Transcriptionpage from './page/who we are/Transcriptionpage'
+import Videosubtitle from './page/who we are/Videosubtitle'
+
 import Signup from './commponent/Signup'
 import Signin from './commponent/Signin'
 import Translateform from './commponent/Translateform' 
@@ -20,6 +22,7 @@ const route = () => {
         <Route path='/human' element ={<Human/>}></Route>
         <Route path='/mtaudits' element={<Mtaudits/>}></Route>
         <Route path='/Transcription'element={<Transcriptionpage/>}></Route>
+        <Route path='/videosubtitle' element={<Videosubtitle/>}></Route>
 
 
         <Route path='/signup' element={<Signup/>}></Route>

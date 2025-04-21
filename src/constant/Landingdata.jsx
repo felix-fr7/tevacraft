@@ -59,6 +59,6 @@ export const landingdata ={
     subitem5:"Software Localization",
     footersubhead3:"Contact",
     email:"biz.operations@tevacraft.in",
-    phone1:"+91 7672002189",
+    phone1:"+91 9441540627",
     phone2:"+91 9108741269",
 }

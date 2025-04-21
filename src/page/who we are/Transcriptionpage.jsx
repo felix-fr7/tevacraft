@@ -80,7 +80,7 @@ const Transcriptionpage = () => {
           </div>
 
           <div className='laprobrodiv'>
-            <img className='laprobo' src={transcription.laprobo}></img>
+            <img className='laprobo' src={transcription.laprobo} alt=''></img>
           </div>
 
          </div>
@@ -147,7 +147,7 @@ const Transcriptionpage = () => {
             <h2 className='powerheading'>{transcription.transhead5}</h2>
             <div className='flexbox'>
               <div>
-                <img className='workimg' src={transcription.asset6}></img>
+                <img className='workimg' src={transcription.asset6} alt=''></img>
               </div>
               <div>
                 <div className='workpara'>

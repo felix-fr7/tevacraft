@@ -23,6 +23,7 @@ const Signup = () => {
     // mail function end
     const [value, setvalue] = useState('')
     const options = [
+        {label:"select yours"},
         { label: "Translator", value1:"to become part of the tevacraft community"},
         { label: "customer", value:"to order translation" },
     ]

@@ -1857,10 +1857,14 @@ button.accordion-button::after{
   }
   .chip{
     color: aqua;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .letters{
     padding: 10px;
+    margin-left: 7px;
+  }
+  .letters h4{
+     margin: 10px;
   }
   .letterbox h4{
     text-align: left;
@@ -1956,13 +1960,20 @@ button.accordion-button::after{
       display: flex;
       justify-content: center;
       flex-direction: column;
+      margin: 5px;
     }
-  
+    .flexbox h4{
+      margin-top: 5px;
+    }
+    .flexbox p{
+      margin: 5px;
+    }
     .transbox p{
       margin: 10px;
     }
     .chip{
       color: aqua;
+    
     }
     .letters{
       padding: 10px;
@@ -1970,9 +1981,11 @@ button.accordion-button::after{
     .letterbox h4{
       text-align: left;
     }
+    .letterbox{
+      margin: 10px;
+    }
     .laprobo{
-      width: 100%;
-      height:400px;
+      display: none;
     }
     /*  */
     .advantage{
@@ -1989,6 +2002,7 @@ button.accordion-button::after{
       border: 1px solid var(--primary-color);
       border-radius: 5px;
       margin:10px;
+      width: 300px;
     }
     .workimg{
       width: 300px;

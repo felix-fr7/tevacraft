@@ -25,17 +25,7 @@ function Topnav() {
 // popup
   const [openpopup,setopenpopup] = useState(false)
   // popup
-  // dropdown
-  const[value,setvalue] = useState('')
-  const options =[
-    {label:"felix",value:1},
-    {label:"muthu",value:2},
-    {label:"thanga",value:3},
-    {label:"natha",value:4},
-  ]
-  function handleSelect(event){
-    setvalue(event.target.value)
-  }
+
   
   return (
     <Navbar expand="lg" className="bg-body-tertiary px-5">
@@ -54,7 +44,7 @@ function Topnav() {
           <hr></hr>
           <NavDropdown.Item href="/transcription">Transcription</NavDropdown.Item>
           <hr></hr>
-          <NavDropdown.Item href="#action/3.5">Video Localization&Subtitles</NavDropdown.Item>
+          <NavDropdown.Item href="/videosubtitle">Video Localization&Subtitles</NavDropdown.Item>
           <hr></hr>
           <NavDropdown.Item href="#action/3.6">Website Localization </NavDropdown.Item>
           <hr></hr>
@@ -84,18 +74,11 @@ function Topnav() {
     <h2 className='powerheading' style={{color:'#B96CFD'}}>Register</h2>
     <div className='form'>
       <i class="fa-solid fa-xmark" onClick={()=> setopenpopup(false)}></i>
-      <input placeholder='Entre your email' type='email' {...register('email')}></input>
-      <input placeholder='Enter Your Name' type='text' {...register('name')}></input>
-      <input type='text' placeholder='Enter your work' {...register('work')}></input>
+      {/* <input placeholder='Entre your email' type='email' {...register('email')}></input> */}
+      {/* <input placeholder='Enter Your Name' type='text' {...register('name')}></input> */}
+      {/* <input type='text' placeholder='Enter your work' {...register('work')}></input> */}
 
       <div className='d-flex justify-content-center mt-5'>
-        <div className='w-50 p-3 border rounded'>
-          <select onChange={handleSelect}>
-            {options.map(options => (
-            <option>{options.label}</option>   
-            ))}
-          </select>
-        </div>
 
       </div>
       <div className='submit' onClick={handleSubmit(onSubmit)}>
