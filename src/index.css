@@ -67,7 +67,10 @@ button.navbar-toggler{
     flex-direction: column;
     border-radius: 10px;
     margin: 20px;
-    box-shadow: 2px 2px 10px 10px #B96CFD;
+    box-shadow: 2px 2px 7px 7px #B96CFD;
+}
+.boxcontainer img{
+  border-radius: 5px;
 }
 .boxcontainer button{
     width: 300px;
@@ -92,13 +95,34 @@ button.navbar-toggler{
     border: 1px solid #B96CFD;
     margin: 10px;
 }
-.signupimg img{
-  width: 500px;
+.signupimg{
+  display: flex;
+  width: 400px;
   height: 500px;
-  border-radius: 20px;
-  margin: 30px;
-  box-shadow: 2px 2px 10px 10px #B96CFD;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--white-color);
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 2px 2px 7px 7px #B96CFD;
 }
+.signupimg img{
+  border-radius: 5px;
+}
+.signupimg button{
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  font-weight: 500;
+  border: 1px solid #B96CFD;
+  margin: 10px;
+}
+.signupimg button:hover{
+  background-color: #B96CFD;
+  color: var(--white-color);
+}
+
 .signflex{
   display: flex;
   align-items: center;
@@ -182,11 +206,16 @@ button.navbar-toggler{
   }
 
 .form input{
-    margin-top: 30px;
+    margin-top: 10px;
     padding: 15px;
-    padding-right: 90px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid var(--primary-color);
+}
+.formselect{
+     margin-top: 10px;
+     padding: 10px;
+     border-radius: 5px;
+     border:1px solid var(--primary-color);
 }
 .form button{
     margin-top: 20px;
@@ -732,13 +761,19 @@ img.icone3{
     .form{
         display: flex;
         flex-direction: column;
-        padding: 0px 90px 20px 90px;
+        padding: 10px;
     }
     .form input{
-        margin-top: 30px;
+        margin-top: 10px;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 1px solid var(--primary-color);
+    }
+    .formselect{
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid var(--primary-color);
     }
     .form button{
         margin-top: 20px;
@@ -2031,3 +2066,12 @@ button.accordion-button::after{
     }
   }
   /* end */
+  .herohome h2{
+     padding-top: 5px;
+  }
+  .heroimg{
+    width: 90%;
+  }
+
+  /*  */
+

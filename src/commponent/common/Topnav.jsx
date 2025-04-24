@@ -15,8 +15,7 @@ function Topnav() {
          try {
            const response =await axios.post('https://tevabackend.onrender.com/register/postdetails',data)
            console.log(response.data)
-   
-           
+
          } catch (error) {
            console.log(error)  
          }
@@ -74,9 +73,9 @@ function Topnav() {
     <h2 className='powerheading' style={{color:'#B96CFD'}}>Register</h2>
     <div className='form'>
       <i class="fa-solid fa-xmark" onClick={()=> setopenpopup(false)}></i>
-      {/* <input placeholder='Entre your email' type='email' {...register('email')}></input> */}
-      {/* <input placeholder='Enter Your Name' type='text' {...register('name')}></input> */}
-      {/* <input type='text' placeholder='Enter your work' {...register('work')}></input> */}
+      <input placeholder='Entre your email' type='email' {...register('email')}></input>
+      <input placeholder='Enter Your Name' type='text' {...register('name')}></input>
+      <input type='text' placeholder='Enter your work' {...register('work')}></input>
 
       <div className='d-flex justify-content-center mt-5'>
 

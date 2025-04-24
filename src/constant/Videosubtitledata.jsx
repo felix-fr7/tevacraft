@@ -1,14 +1,12 @@
-export const videosubhero = `${process.env.PUBLIC_URL}/assets/videosubtitledata.jsx`
+export const videosubhero = `${process.env.PUBLIC_URL}/assets/videohero.png`
 export const whyimg= `${process.env.PUBLIC_URL}/assets/vision.jsx`
-
-
-
+export const g10= `${process.env.PUBLIC_URL}/assets/g10.png`
 
 
 
 
 export const videosubdata ={
-    videosubhero:`${process.env.PUBLIC_URL}/assets/videosubtitledata.jsx`,
+    videosubhero:`${process.env.PUBLIC_URL}/assets/videohero.png`,
     videosubhead:" Elevate Your Global Reach with Expert Video Localization and Subtitling",
     videosubpara:" In today's digital age, video content reigns supreme. But to truly capture a global audience, your videos need to speak their language—literally. At Tevacraft AI Systems, we specialize in high-quality video localization and subtitling services that help businesses and content creators break language barriers and connect with viewers worldwide.",
     ourexpect:" Our Expertise",
@@ -51,7 +49,24 @@ export const videosubdata ={
     boxpara4:" We integrate subtitles, voice-overs, or on-screen text with precision timing and formatting.",
     boxpara5:" Rigorous checks ensure accuracy, synchronization, and overall quality.",
     boxpara6:" We provide your localized content in your preferred format, ready for distribution",
+     
+    successhead:" Success Stories",
+    successpara1:"Here are just a few examples of how we've helped our clients achieve global success ",
+    successbigpara:"Increased engagement by 150% for a fashion brand's Instagram Stories across 5 European markets.",
+    successbigpara2:"Helped a tech startup's explainer video go viral in 3 Asian countries, leading to a 200% increase in app downloads.",
+    successbigpara3:" Localized a popular YouTube channel's content, resulting in a 300% growth in international subscribers",
 
+    readyhead:"Ready to Go Global?",
+    readypara:"Don't let language barriers limit your video content's potential. With Tevacraft AI Systems’ expert video localization and subtitling services, you can:",
+    g10:`${process.env.PUBLIC_URL}/assets/g10.png`,
+    
+    readypara1:"Expand your audience reach",
+    readypara2:"Increase engagement and viewer retention",
+    readypara3:"Improve accessibility for diverse audiences",
+    readypara4:"Enhance your brand's global presence",
+
+    footerpara1:"Whether you're a social media influencer looking to connect with international fans, a business aiming to enter new markets, or a content creator wanting to share your vision with the world, we have the expertise to make it happen.",
+    footerpara2:" Contact us today to learn how we can help localize your video content and amplify your global impact!"
 
 
 

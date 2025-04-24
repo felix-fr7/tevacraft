@@ -9,8 +9,9 @@ import Transcriptionpage from './page/who we are/Transcriptionpage'
 import Videosubtitle from './page/who we are/Videosubtitle'
 
 import Signup from './commponent/Signup'
-import Signin from './commponent/Signin'
 import Translateform from './commponent/Translateform' 
+import Pagefile from './commponent/common/Pagefile'
+
 
 const route = () => {
   return (
@@ -26,8 +27,8 @@ const route = () => {
 
 
         <Route path='/signup' element={<Signup/>}></Route>
-        <Route path='/signin' element={<Signin/>}></Route>
         <Route path='/translate' element={<Translateform/>}></Route>
+        <Route path='/pagefile' element={<Pagefile/>}></Route>
       </Routes>
    
     </div>
