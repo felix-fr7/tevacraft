@@ -12,8 +12,8 @@ const Signup = () => {
                     <img src={navdata.signup} alt=''></img>
                     <Link to="/pagefile"><button>Translater</button></Link>
                 </div>
-                <div className='boxcontainer'>
-                    <img src={navdata.login} alt=''></img>
+                <div className='signupimg'>
+                    <img  src={navdata.login} alt=''></img>
                     <button>Customer</button>
                 </div>
             </div>

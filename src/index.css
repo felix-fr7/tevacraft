@@ -57,37 +57,6 @@ button.navbar-toggler{
   height: 100vh;
   background-color: var(--secondary-color);
 }
-.boxcontainer{
-    display: flex;
-    width: 400px;
-    height: 500px;
-    align-items: center;
-    gap: 10px;
-    background-color: var(--white-color);
-    flex-direction: column;
-    border-radius: 10px;
-    margin: 20px;
-    box-shadow: 2px 2px 7px 7px #B96CFD;
-}
-.boxcontainer img{
-  border-radius: 5px;
-}
-.boxcontainer button{
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    font-weight: 500;
-    border: 1px solid #B96CFD;
-    margin: 10px;
-}
-.boxcontainer button:hover{
-    background-color: #B96CFD;
-    color: var(--white-color);
-}
-.boxcontainer h2{
-  font-size: 2.4rem;
-  margin-top: 10px;
-}
 .signitems{
     width: 300px;
     height: 40px;
@@ -128,13 +97,61 @@ button.navbar-toggler{
   align-items: center;
   justify-content: center;
 }
-.signincolor{
-  color:#0066cc;
-  cursor: pointer;
-}
 .formtranslate{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 580px){
+  .signflex{
+    display: flex;
+    flex-direction: column;
+  }
+  .signupcontainer{
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-color);
+  }
+  .signitems{
+      width: 200px;
+      height: 30px;
+      border-radius: 5px;
+      border: 1px solid #B96CFD;
+      margin: 10px;
+  }
+  .signupimg{
+    display: flex;
+    width: 280px;
+    height: 380px;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--white-color);
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 2px 2px 7px 7px #B96CFD;
+  }
+  .signupimg img{
+    border-radius: 5px;
+  }
+  .signupimg button{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 1px solid #B96CFD;
+    margin: 10px;
+  }
+  .signupimg button:hover{
+    background-color: #B96CFD;
+    color: var(--white-color);
+  }
+  
+  .signflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 /* signend */
 .bg-body-tertiary{
@@ -168,15 +185,7 @@ button.navbar-toggler{
 .topnavdrop2{
     min-width: 310px !important;
 }
-.popup{
-    position: absolute;
-    background-color: rgba(6, 6, 6, 0.967);
-    align-items: center;
-    top: 300px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-}
+
 /* form---start------ */
 .mainform{
     display: flex;
@@ -240,6 +249,17 @@ button.navbar-toggler{
 }
 .form .submit{
     text-align: center;
+}
+.scrollbar{
+  width: 100%;
+  height: 450px;
+  border: 1px solid var(--primary-color);
+  overflow: auto;
+  padding: 10px;
+}
+.table-auto{
+text-align: center;
+ margin: 0 auto;
 }
 /* form--end------- */
 
