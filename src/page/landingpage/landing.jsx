@@ -2,6 +2,7 @@ import React from 'react'
 import { landingdata } from '../../constant/Landingdata'
 import { HiOutlineMail } from "react-icons/hi";
 import { FaPhoneVolume } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 const Landing = () => {  
@@ -69,12 +70,12 @@ const Landing = () => {
    <h2>{landingdata.footerhead}</h2>
    <div className='footer'>
     <div className='whowearecontant'>
-    <h4>{}{landingdata.footersubhead1}</h4>
-    <p>{landingdata.item1}</p>
-    <p>{landingdata.item2}</p>
-    <p>{landingdata.item3}</p>
-    <p>{landingdata.item4}</p>
-    <p>{landingdata.item5}</p>
+    <h4>{landingdata.footersubhead1}</h4>
+    <Link to='/aiservice'><p>{landingdata.item1}</p></Link>
+    <Link to='/human'><p>{landingdata.item2}</p></Link>
+    <Link to='/mtaudits'><p>{landingdata.item3}</p></Link>
+    <Link to='/Transcription'><p>{landingdata.item4}</p></Link>
+    <Link to='/videosubtitle'><p>{landingdata.item5}</p></Link>
     <p>{landingdata.item6}</p>
     <p>{landingdata.item7}</p>
   </div>

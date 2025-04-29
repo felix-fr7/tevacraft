@@ -14,7 +14,7 @@ const Signup = () => {
                 </div>
                 <div className='signupimg'>
                     <img  src={navdata.login} alt=''></img>
-                    <button>Customer</button>
+                    <Link to ='/pagefile2'><button>Customer</button></Link>
                 </div>
             </div>
         </div>

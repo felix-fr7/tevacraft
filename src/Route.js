@@ -11,6 +11,8 @@ import Videosubtitle from './page/who we are/Videosubtitle'
 import Signup from './commponent/Signup'
 import Translateform from './commponent/Translateform' 
 import Pagefile from './commponent/common/Pagefile'
+import Pagefile2 from './commponent/common/Pagefile2'
+
 
 
 const route = () => {
@@ -29,6 +31,7 @@ const route = () => {
         <Route path='/signup' element={<Signup/>}></Route>
         <Route path='/translate' element={<Translateform/>}></Route>
         <Route path='/pagefile' element={<Pagefile/>}></Route>
+        <Route path='/pagefile2' element={<Pagefile2/>}></Route>
       </Routes>
    
     </div>
