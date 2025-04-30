@@ -1,6 +1,10 @@
 export const videosubhero = `${process.env.PUBLIC_URL}/assets/videohero.png`
 export const whyimg= `${process.env.PUBLIC_URL}/assets/vision.jsx`
 export const g10= `${process.env.PUBLIC_URL}/assets/g10.png`
+export const group1=`${process.env.PUBLIC_URL}/assets/group1.png`
+export const group2=`${process.env.PUBLIC_URL}/assets/group2.png`
+
+
 
 
 
@@ -42,6 +46,8 @@ export const videosubdata ={
     boxhead4:"Technical Implementation",
     boxhead5:" Quality Assurance",
     boxhead6:" Delivery",
+    group1:`${process.env.PUBLIC_URL}/assets/group1.png`,
+
 
     boxpara1:" We thoroughly review your video content to understand its context, tone, and target audience.",
     boxpara2:" Our team develops a tailored strategy for your specific needs and target markets.",
@@ -49,7 +55,9 @@ export const videosubdata ={
     boxpara4:" We integrate subtitles, voice-overs, or on-screen text with precision timing and formatting.",
     boxpara5:" Rigorous checks ensure accuracy, synchronization, and overall quality.",
     boxpara6:" We provide your localized content in your preferred format, ready for distribution",
-     
+    group2:`${process.env.PUBLIC_URL}/assets/group2.png`,
+    
+
     successhead:" Success Stories",
     successpara1:"Here are just a few examples of how we've helped our clients achieve global success ",
     successbigpara:"Increased engagement by 150% for a fashion brand's Instagram Stories across 5 European markets.",
