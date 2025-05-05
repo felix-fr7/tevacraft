@@ -7,11 +7,15 @@ import Human from './page/who we are/Human'
 import Mtaudits from './page/who we are/Mtaudits'
 import Transcriptionpage from './page/who we are/Transcriptionpage'
 import Videosubtitle from './page/who we are/Videosubtitle'
+import Websitelocalization from './page/who we are/Websitelocalization'
+
+
 
 import Signup from './commponent/Signup'
 import Translateform from './commponent/Translateform' 
 import Pagefile from './commponent/common/Pagefile'
 import Pagefile2 from './commponent/common/Pagefile2'
+
 
 
 
@@ -26,6 +30,7 @@ const route = () => {
         <Route path='/mtaudits' element={<Mtaudits/>}></Route>
         <Route path='/Transcription'element={<Transcriptionpage/>}></Route>
         <Route path='/videosubtitle' element={<Videosubtitle/>}></Route>
+        <Route path='/websitelocation' element={<Websitelocalization/>}></Route>
 
 
         <Route path='/signup' element={<Signup/>}></Route>

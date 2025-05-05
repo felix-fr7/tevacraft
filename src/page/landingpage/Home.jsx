@@ -14,7 +14,6 @@ const Home = () => {
             <h2 className='powerheading'>{homedata.powertitle}</h2>
             <h2 className='span'>{homedata.powertitle2}</h2>
             <p className='powerpara'>{homedata.powerpara}</p>
-            <button className='bookfree'>Book A Free Consoultation</button>
             </div>
 
 

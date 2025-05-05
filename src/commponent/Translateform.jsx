@@ -56,7 +56,6 @@ const Translateform = () => {
       <input {...register('dob')}
         type="date"
         name="dob"
-       
         required
         className="border p-2 rounded w-full"
       />
