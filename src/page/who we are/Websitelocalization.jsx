@@ -44,7 +44,7 @@ const Websitelocalization = () => {
            <p className='smallpara'>{websitedata.ourpara5}</p>
             </div>
             <div>
-          <img className='ourimg' src={websitedata.successimg}></img>
+          <img className='ourimg' src={websitedata.successimg} alt=''></img>
             </div>
           </div>
 
@@ -55,13 +55,13 @@ const Websitelocalization = () => {
       <div className='successmain'>
         <h2 className='powerheading'>{websitedata.successhead}</h2>
         <p className='powerpara'>{websitedata.successpara}</p>
-        <img  className='successimg' src={websitedata.ourimg2}></img>
+        <img  className='successimg' src={websitedata.ourimg2} alt=''></img>
         <p className='powerpara'>{websitedata.successbigpara}</p>
       </div>
       
       <div className='successmainflex'>
         <div>
-          <img src={websitedata.seoimg}></img>
+          <img src={websitedata.seoimg} alt=''></img>
         </div>
         <div className='successsubflex'>
         <div className='headchipflex'>
@@ -92,7 +92,7 @@ const Websitelocalization = () => {
            <p className='smallpara'>{websitedata.successpara4}</p>
         </div> 
         <div>
-          <img src={websitedata.visual}></img>
+          <img src={websitedata.visual} alt=''></img>
         </div>
       </div>
 {/*  */}

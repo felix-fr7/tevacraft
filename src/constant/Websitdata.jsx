@@ -13,7 +13,7 @@ export const visual =`${process.env.PUBLIC_URL}/assets/Visual.png`
 
 
 
-export const websitedata ={
+ export const websitedata ={
     webhome:`${process.env.PUBLIC_URL}/assets/webhome.png`,
     webhead:" Unlock Global Markets with Expert Website Localization",
     webpara:"In today's interconnected world, a well-localized website is the key to unlocking international markets and connecting with customers across the globe. At Tevacraft AI Systems, we specialize in comprehensive website localization services that have helped numerous businesses successfully launch their digital presence in diverse marketplaces.",

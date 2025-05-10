@@ -269,6 +269,25 @@ button.navbar-toggler{
 text-align: center;
  margin: 0 auto;
 }
+
+.customerformmain{
+width: 100%;
+align-items: center;
+text-align: start;
+justify-content: center;
+display: flex;
+flex-direction: column;
+}
+.customerform2{
+  padding: 20px 90px 20px 90px;
+}
+.customerinput{
+  margin-top: 10px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+}
 /* form--end------- */
 
 
@@ -2700,3 +2719,57 @@ button.accordion-button::after{
     font-size: 0.9rem;
   }
   }
+
+  /* elearning */
+  .ehome{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.715), rgba(0, 0, 0, 0.699)), url("../public/assets/wave.png");
+    padding: 110px;
+  }
+
+  .esubhome h2{
+    text-align: start;
+    align-items: start;
+    padding: 30px;
+  }
+    .esubhome h4{
+    text-align: start;
+    align-items: start;
+  }
+      .esubhome p{
+    text-align: start;
+    align-items: start;
+  }
+  .elearning{
+    background-color: var(--secondary-color);
+  }
+  .eball{
+    width: 100%;
+    padding-left: 80px;
+  }
+  .eballflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .eballheadflex{
+    display: flex;
+  }
+  .eballheadflex h4{
+    margin: 10px;
+  }
+  .eball img{
+    width: 400px;
+    height: 450px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  .eballparamain{
+    margin: 20px;
+    padding-right: 40px;
+  }
+  .eballparasub p{
+    align-items: start;
+    text-align: start;
+  }
+  

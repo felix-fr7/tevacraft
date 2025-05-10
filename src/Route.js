@@ -8,6 +8,7 @@ import Mtaudits from './page/who we are/Mtaudits'
 import Transcriptionpage from './page/who we are/Transcriptionpage'
 import Videosubtitle from './page/who we are/Videosubtitle'
 import Websitelocalization from './page/who we are/Websitelocalization'
+import Elearning from './page/who we are/Elearning'
 
 
 
@@ -31,6 +32,7 @@ const route = () => {
         <Route path='/Transcription'element={<Transcriptionpage/>}></Route>
         <Route path='/videosubtitle' element={<Videosubtitle/>}></Route>
         <Route path='/websitelocation' element={<Websitelocalization/>}></Route>
+        <Route path='/elearning' element={<Elearning/>}></Route>
 
 
         <Route path='/signup' element={<Signup/>}></Route>

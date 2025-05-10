@@ -16,32 +16,58 @@ const Pagefile = () => {
     }
   }
   // mail function end
-  // popup
-  // popup
 
 
   return (
     <div>
 
       <div className='mainform'>
-        <h2 className='powerheading' style={{ color: '#B96CFD' }}>Register</h2>
-        <div className='form'>
-          <input placeholder='Entre your email' type='email' {...register('email')}></input>
-          <input placeholder='Enter Your Name' type='text' {...register('firstname')}></input>
-          <input type='text' placeholder='lastname' {...register('lastname')}></input>
-          <div>
-            <select className='formselect' name='gender' {...register('gender')}>
-              <option>Select Gender</option>
-              <option>Male</option>
-              <option>Female</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <input type="date"name="dob" {...register('dob')} />
+      <h2 className='powerheading' style={{ color: '#B96CFD' }}>Register</h2>
+      <div className='form'>
+        <input
+          placeholder='Enter your email'
+          type='email'
+          {...register('email', { required: 'Email is required' })}/>
+        {errors.email && <p className='error'>{errors.email.message}</p>}
 
-          <input type="tel" name="phone" placeholder='phone' {...register('phone')}/>
+        <input
+          placeholder='Enter Your Name'
+          type='text'
+          {...register('firstname', { required: 'First name is required' })}/>
+        {errors.firstname && <p className='error'>{errors.firstname.message}</p>}
 
-          <select className='formselect' {...register('currentlocation')}>
+        <input
+          type='text'
+          placeholder='Last name'
+          {...register('lastname', { required: 'Last name is required' })}/>
+        {errors.lastname && <p className='error'>{errors.lastname.message}</p>}
+
+        <div>
+          <select
+            className='formselect'
+            {...register('gender', { required: 'Gender is required' })}>
+            <option value=''>Select Gender</option>
+            <option value='Male'>Male</option>
+            <option value='Female'>Female</option>
+            <option value='Other'>Other</option>
+          </select>
+          {errors.gender && <p className='error'>{errors.gender.message}</p>}
+        </div>
+
+        <input
+          type="date"
+          placeholder='Date of Birth'
+          {...register('dob', { required: 'Date of birth is required' })}
+        />
+        {errors.dob && <p className='error'>{errors.dob.message}</p>}
+
+        <input
+          type="tel"
+          placeholder='Phone'
+          {...register('phone', { required: 'Phone number is required' })}/>
+        {errors.phone && <p className='error'>{errors.phone.message}</p>}
+
+          <select className='formselect' {...register('currentlocation', { required: 'Current location is required' })}>
         <option value="">Current Location</option>
         <option value="Afghanistan">Afghanistan</option>  
         <option value="Albania">Albania</option>
@@ -238,91 +264,142 @@ const Pagefile = () => {
         <option value="Zambia">Zambia</option>
         <option value="Zimbabwe">Zimbabwe</option>
       </select>
+      {errors.currentlocation && (
+  <p className="error">{errors.currentlocation.message}</p>)}
       
-      <select className='formselect' {...register("education")}>
-        <option value="">Select Education</option>
-        <option value="High School">High School</option>
-        <option value="Bachelor's">Bachelor's</option>
-        <option value="Master's">Master's</option>
-        <option value="PhD">PhD</option>
-      </select>
+     {/* Education */}
+<select className='formselect' {...register("education", { required: "Education is required" })}>
+  <option value="">Select Education</option>
+  <option value="High School">High School</option>
+  <option value="Bachelor's">Bachelor's</option>
+  <option value="Master's">Master's</option>
+  <option value="PhD">PhD</option>
+</select>
+{errors.education && <p className="error">{errors.education.message}</p>}
 
-      <input {...register("nameofcollege")} type="text" placeholder="Name of College"/>
+{/* College Name */}
+<input {...register("nameofcollege", { required: "College name is required" })} type="text" placeholder="Name of College" />
+{errors.nameofcollege && <p className="error">{errors.nameofcollege.message}</p>}
 
-      <select className='formselect' {...register("primarylanguage")}>
-        <option>Select Primary Language</option>
-        <option>English</option>
-        <option>Hindi</option>
-        <option>Spanish</option>
-      </select>
+{/* Primary Language */}
+<select className='formselect' {...register("primarylanguage", { required: "Primary language is required" })}>
+  <option value="">Select Primary Language</option>
+  <option>English</option>
+  <option>Hindi</option>
+  <option>Spanish</option>
+</select>
+{errors.primarylanguage && <p className="error">{errors.primarylanguage.message}</p>}
 
-      <input {...register('ifothers')} placeholder="If others, please specify"/>
+{/* If Others */}
+<input {...register('ifothers')} placeholder="If others, please specify" />
+{/* Optional – no validation */}
 
-      <select className='formselect' {...register("secondarylanguage")}>
-        <option>secondary Languages</option>
-        <option>ASL</option>
-        <option>Afrikaans</option>
-        <option>Akan</option>
-        <option>Albanian</option>
-        <option>Amharic</option>
-      </select>
+{/* Secondary Language */}
+<select className='formselect' {...register("secondarylanguage", { required: "Secondary language is required" })}>
+  <option value="">Secondary Languages</option>
+  <option>ASL</option>
+  <option>Afrikaans</option>
+  <option>Akan</option>
+  <option>Albanian</option>
+  <option>Amharic</option>
+</select>
+{errors.secondarylanguage && <p className="error">{errors.secondarylanguage.message}</p>}
 
-      <select className='formselect' {...register("languageproficiency")}>
-        <option>Select Language Proficiency</option>
-        <option>Beginner</option>
-        <option>Intermediate</option>
-        <option>Advanced</option>
-        <option>Native</option>
-      </select>
-      
-      <select className='formselect' {...register('domain')}>
-        <option>domain</option>
-        <option>Technical</option>
-        <option>Educational</option>
-        <option>Medical</option>
-        <option>Legal</option>
-      </select>
+{/* Language Proficiency */}
+<select className='formselect' {...register("languageproficiency", { required: "Proficiency is required" })}>
+  <option value="">Select Language Proficiency</option>
+  <option>Beginner</option>
+  <option>Intermediate</option>
+  <option>Advanced</option>
+  <option>Native</option>
+</select>
+{errors.languageproficiency && <p className="error">{errors.languageproficiency.message}</p>}
 
-      <select className='formselect' {...register('expertise')}>
-        <option>expertise</option>
-        <option>Translation</option>
-        <option>Proofreading</option>
-        <option>Reviewing</option>
-        <option>Editing</option>
-       </select>
+{/* Domain */}
+<select className='formselect' {...register('domain', { required: "Domain is required" })}>
+  <option value="">Domain</option>
+  <option>Technical</option>
+  <option>Educational</option>
+  <option>Medical</option>
+  <option>Legal</option>
+</select>
+{errors.domain && <p className="error">{errors.domain.message}</p>}
 
-      <input placeholder='industry' {...register('industry')}/>
+{/* Expertise */}
+<select className='formselect' {...register('expertise', { required: "Expertise is required" })}>
+  <option value="">Expertise</option>
+  <option>Translation</option>
+  <option>Proofreading</option>
+  <option>Reviewing</option>
+  <option>Editing</option>
+</select>
+{errors.expertise && <p className="error">{errors.expertise.message}</p>}
 
-      <select className='formselect' {...register('currency')}>
-        <option value="">Select Currency</option>
-        <option value="INR">INR</option>
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-      </select>
+{/* Industry */}
+<input placeholder='Industry' {...register('industry', { required: "Industry is required" })} />
+{errors.industry && <p className="error">{errors.industry.message}</p>}
 
-      <input {...register('chargesperword')} placeholder="charges PerWord" type="number"/>
+{/* Currency */}
+<select className='formselect' {...register('currency', { required: "Currency is required" })}>
+  <option value="">Select Currency</option>
+  <option value="INR">INR</option>
+  <option value="USD">USD</option>
+  <option value="EUR">EUR</option>
+</select>
+{errors.currency && <p className="error">{errors.currency.message}</p>}
 
-      <input {...register('experienceinyears')}type="number"placeholder="Experience in Years"/>
+{/* Charges Per Word */}
+<input {...register('chargesperword', {
+  required: "Charge per word is required",
+  valueAsNumber: true,
+  min: { value: 0.01, message: "Minimum charge must be greater than 0" }
+})} placeholder="Charges Per Word" type="number" />
+{errors.chargesperword && <p className="error">{errors.chargesperword.message}</p>}
+
+{/* Experience in Years */}
+<input {...register('experienceinyears', {
+  required: "Experience is required",
+  valueAsNumber: true,
+  min: { value: 0, message: "Experience cannot be negative" }
+})} type="number" placeholder="Experience in Years" />
+{errors.experienceinyears && <p className="error">{errors.experienceinyears.message}</p>}
 
 
-      <div>
-        <label className="block font-medium mb-1">Upload CV</label>
-        <input
-          type="file"
-          name="cv"
-          accept=".pdf,.doc,.docx"
-        />
-      </div>
+<div>
+  <label className="block font-medium mb-1">Upload CV</label>
+  <input
+    type="file"
+    accept=".pdf,.doc,.docx"
+    {...register("cv", {
+      required: "CV is required",
+      validate: {
+        fileType: (value) =>
+          value[0] && ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"].includes(value[0]?.type) || "Invalid file type",
+      }
+    })}
+  />
+  {errors.cv && <p className="text-red-500 text-sm">{errors.cv.message}</p>}
+</div>
 
-      <div>
-        <label className="block font-medium mb-1">Upload Sample</label>
-        <input
-          type="file"
-          name="sample"
-          accept=".pdf,.doc,.docx"
-        />
-        <p className="text-sm text-gray-500 italic">Maximum size limit - 1 MB</p>
-      </div>
+<div>
+  <label className="block font-medium mb-1">Upload Sample</label>
+  <input
+    type="file"
+    accept=".pdf,.doc,.docx"
+    {...register("sample", {
+      required: "Sample file is required",
+      validate: {
+        fileType: (value) =>
+          value[0] && ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"].includes(value[0]?.type) || "Invalid file type",
+        fileSize: (value) =>
+          value[0] && value[0].size <= 1024 * 1024 || "File size must be under 1MB"
+      }
+    })}
+  />
+  <p className="text-sm text-gray-500 italic">Maximum size limit - 1 MB</p>
+  {errors.sample && <p className="text-red-500 text-sm">{errors.sample.message}</p>}
+</div>
+
        
        <div className="scrollbar">
       <div>
@@ -465,18 +542,17 @@ IN WITNESS WHEREOF, and intending to be legally bound, the Parties have duly exe
         </p>
       </div>
       </div>
-
       <div className="flex items-center space-x-2">
-        <input
-          type="checkbox"
-          name="agreedToTerms"
-          className="accent-blue-600"
-        />
-
-        <label>I agree to the Terms and Conditions *</label>
-      </div>
-
-
+  <input
+    type="checkbox"
+    className="accent-blue-600"
+    {...register("agreedToTerms", {
+      required: "You must agree to the terms and conditions", })} />
+  <label>I agree to the Terms and Conditions *</label>
+</div>
+{errors.agreedToTerms && (
+  <p className="text-red-500 text-sm">{errors.agreedToTerms.message}</p>
+)}
 
           <div className='submit' >
             <button onClick={handleSubmit(onSubmit)}>Submit</button>

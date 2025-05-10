@@ -18,11 +18,12 @@ const Pagefile2 = () => {
   return (
     <div>
 
-        <div className='mainform2'>
+        <div className='customerformmain'>
         <h2 className='powerheading' style={{ color: '#B96CFD' }}>Register</h2>
-          <div className='form2'>
+          <div className='customerform2'>
             <form onSubmit={handleSubmit(onSubmit)}>
 
+          <div>
           <select className='formselect' {...register('currentlocation', { required: "Current location is required" })}>
         <option value="">Current Location</option>
         <option value="Afghanistan">Afghanistan</option>  
@@ -221,7 +222,10 @@ const Pagefile2 = () => {
         <option value="Zimbabwe">Zimbabwe</option>
       </select>
       {errors.currentlocation && <p className="error">{errors.currentlocation.message}</p>}
-      <input placeholder='Entre your email' className='cinput' type='email'   {...register('email', {
+      </div>
+
+      <div>
+      <input placeholder='Entre your email' className='customerinput' type='email'   {...register('email', {
                 required: "Email is required",
                 pattern: {
                   value: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
@@ -230,10 +234,12 @@ const Pagefile2 = () => {
               })}>
               </input>
               {errors.email && <p className="error">{errors.email.message}</p>}
+              </div>
 
-
-      <input placeholder='Enter Your Name' className='cinput' type='text'  {...register('name', { required: "Name is required" })}></input>
+       <div>
+      <input placeholder='Enter Your Name' className='customerinput' type='text'  {...register('name', { required: "Name is required" })}></input>
       {errors.name && <p className="error">{errors.name.message}</p>}
+      </div>
       
           <div>
             <select className='formselect' name='gender' {...register('gender', { required: "Gender is required" })}>
@@ -245,9 +251,13 @@ const Pagefile2 = () => {
             {errors.gender && <p className="error">{errors.gender.message}</p>}
           </div>
 
-          <input type="date"name="dob" className='cinput'  {...register('dob', { required: "Date of birth is required" })} />
+            <div>
+          <input type="date"name="dob" placeholder='Date of birth' className='customerinput'  {...register('dob', { required: "Date of birth is required" })} />
           {errors.dob && <p className="error">{errors.dob.message}</p>}
-          <input type="tel" className='cinput' name="phone" placeholder='phone'  {...register('phone', {
+          </div>
+
+          <div>
+          <input type="tel" className='customerinput' name="phone" placeholder='phone'  {...register('phone', {
                 required: "Phone number is required",
                 pattern: {
                   value: /^[0-9]{10,15}$/,
@@ -255,8 +265,8 @@ const Pagefile2 = () => {
                 }
               })}/>
               {errors.phone && <p className="error">{errors.phone.message}</p>}
-           
-        
+              </div>
+  
         <div className='submit' >
             <button onClick={handleSubmit(onSubmit)}>Submit</button>
           </div>
