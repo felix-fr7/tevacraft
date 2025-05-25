@@ -76,8 +76,8 @@ const Landing = () => {
     <Link to='/mtaudits'><p>{landingdata.item3}</p></Link>
     <Link to='/Transcription'><p>{landingdata.item4}</p></Link>
     <Link to='/videosubtitle'><p>{landingdata.item5}</p></Link>
-    <p>{landingdata.item6}</p>
-    <p>{landingdata.item7}</p>
+    <Link to='/websitelocation'><p>{landingdata.item6}</p></Link>
+    <Link to='/elearning'><p>{landingdata.item7}</p></Link>
   </div>
   <div className='contact'>
   <h4>{landingdata.footersubhead3}</h4>

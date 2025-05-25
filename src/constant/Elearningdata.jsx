@@ -44,17 +44,17 @@
     robo6subhead5:"Gamified learning experiences",
 
     minirobo1:`${process.env.PUBLIC_URL}/assets/minirobo1.jpg`,
-    minirobo1:`${process.env.PUBLIC_URL}/assets/minirobo2.jpg`,
-    minirobo1:`${process.env.PUBLIC_URL}/assets/minirobo3.jpg`,
-    minirobo1:`${process.env.PUBLIC_URL}/assets/minirobo4.jpg`,
-    minirobo1:`${process.env.PUBLIC_URL}/assets/minirobo5.jpg`,
+    minirobo2:`${process.env.PUBLIC_URL}/assets/minirobo2.jpg`,
+    minirobo3:`${process.env.PUBLIC_URL}/assets/minirobo3.jpg`,
+    minirobo4:`${process.env.PUBLIC_URL}/assets/minirobo4.jpg`,
+    minirobo5:`${process.env.PUBLIC_URL}/assets/minirobo5.jpg`,
 
 
     robo6footerpara:'Our expert designers and developers work closely with educators and trainers to ensure that each interface not only looks great but also delivers an optimal learning experience.',
 
 // 
    handrobohead:" Our E-Learning Expertise",
-   handrobosubhead1:" Custom Content Development",
+   handrobosubhead1:"Custom Content Development",
    handrobosubhead2:"Learning Management System (LMS) Integration",
    handrobopara1:"We create tailored e-learning content that aligns with your curriculum or training objectives. Our team of instructional designers, subject matter experts, and multimedia specialists collaborate to produce high-quality, engaging learning materials.",
    handrobopara2:"We ensure seamless integration of our e-learning content with popular LMS platforms, making it easy for institutions and corporations to manage and track learner progress.",
@@ -72,7 +72,7 @@
    
    ssubhead1:" Transforming K-12 Education",
    ssubhead2:" Enhancing Higher Education",
-   ssubhread3:" Revolutionizing Corporate Training",
+   ssubhead3:" Revolutionizing Corporate Training",
 
    spara1:"We helped a network of charter schools implement a blended learning model, resulting in a 30% improvement in student engagement and test scores.",
    spara2:"Our custom e-learning platform enabled a leading university to launch successful online degree programs, increasing enrollment by 50% within the first year.",

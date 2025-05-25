@@ -6,16 +6,22 @@ import { useForm } from 'react-hook-form';
 const Pagefile = () => {
   // mail function start
   const { formState: { errors }, register, handleSubmit } = useForm()
-  const onSubmit = async (data) => {
-    try {
-      const response = await axios.post('http://localhost:3000/register/postdetails', data)
-      console.log(response.data)
+const onSubmit = async (data) => {
+  try {
+    const response = await axios.post('https://tevabackend.onrender.com/register/postdetails', data);
 
-    } catch (error) {
-      console.log(error)
+    if (response.status === 200) {
+      alert('Registered Successfully');
     }
+  } catch (error) {
+    if (error.response && error.response.data && error.response.data.message) {
+      alert(error.response.data.message); 
+    } else {
+      alert('Something went wrong. Please try again.');
+    }
+    console.error(error);
   }
-  // mail function end
+};
 
 
   return (

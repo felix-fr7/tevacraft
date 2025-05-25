@@ -5,15 +5,27 @@ import { useForm } from 'react-hook-form';
 const Pagefile2 = () => {
       // mail function start
   const { formState: { errors }, register, handleSubmit } = useForm()
-  const onSubmit = async (userdata) => {
-    try {
-      const response = await axios.post('http://localhost:3000/register/customer', userdata)
-      console.log(response.userdata)
+const onSubmit = async (data) => {
+  try {
+    const response = await axios.post('https://tevabackend.onrender.com/register/customer', data);
 
-    } catch (error) {
-      console.log(error)
+    if (response.status === 200 || response.status === 201) {
+      alert('Registered Successfully');
+    } else {
+      alert('Unexpected response from server.');
     }
+  } catch (error) {
+    // Check if the error has a response with a message
+    if (error.response?.data?.message) {
+      alert(error.response.data.message);
+    } else if (error.message) {
+      alert(`Error: ${error.message}`);
+    } else {
+      alert('Something went wrong. Please try again.');
+    }
+    console.error('Registration error:', error);
   }
+};
   // mail function end
   return (
     <div>

@@ -2772,4 +2772,151 @@ button.accordion-button::after{
     align-items: start;
     text-align: start;
   }
-  
+  /* s3 */
+  .s3{
+    padding: 30px;
+  }
+  .miniroboflex{
+    display: flex;
+  }
+  .minirobobox{
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .minirobobox:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px var(--primary-color);
+  }
+  .minirobobox img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+  }
+  @keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.handrobopurple{
+   padding: 40px;
+}
+.purpleflex{
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  gap: 20px;
+  background-color: var(--primary-color);
+}
+.flexrocket{
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  gap: 20px;
+
+}
+.flexrocket i{
+  margin: 10px;
+}
+.purpleflex p{
+  padding: 20px;
+}
+
+.tableblue{
+  padding: 30px;
+}
+.tableflex{
+ display: flex;
+ gap: 20px;
+ align-items: center;
+ justify-content: center;
+ border: 1px solid var(--primary-color);
+ border-radius: 5px;
+}
+.tableflex h4{
+  margin: 5px;
+}
+.tableflex p{
+  padding: 20px;
+}
+
+.s5{
+  padding: 30px;
+}
+.sflex{
+  display: flex;
+  padding: 30px;
+  gap: 10px;
+}
+.sflex h4{
+  margin: 5px;
+  font-size: 1.6rem;
+}
+.sflex p{
+  padding: 20px;
+}
+.flexicon{
+  display: flex;
+}
+.flexicon i{
+  margin: 10px;
+  margin-left: 30px;
+  color: var(--primary-color)
+
+}
+.s6flex{
+  display: flex;
+}
+
+.colorchange {
+  position: relative;
+  width: 100%;
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1;
+  color: #333;
+  transition: color 0.4s ease;
+}
+
+.colorchange::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: var(--primary-color);
+  z-index: -1;
+  transition: height 0.4s ease ;
+}
+.colorchange:hover::before {
+  height: 100%;
+}
+.colorchange:hover {
+  color: white;
+}
+
+
+
+
