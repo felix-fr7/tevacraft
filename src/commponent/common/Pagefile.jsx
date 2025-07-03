@@ -389,21 +389,6 @@ const onSubmit = async (data) => {
 
 <div>
   <label className="block font-medium mb-1">Upload Sample</label>
-  <input
-    type="file"
-    accept=".pdf,.doc,.docx"
-    {...register("sample", {
-      required: "Sample file is required",
-      validate: {
-        fileType: (value) =>
-          value[0] && ["application/pdf", "application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"].includes(value[0]?.type) || "Invalid file type",
-        fileSize: (value) =>
-          value[0] && value[0].size <= 1024 * 1024 || "File size must be under 1MB"
-      }
-    })}
-  />
-  <p className="text-sm text-gray-500 italic">Maximum size limit - 1 MB</p>
-  {errors.sample && <p className="text-red-500 text-sm">{errors.sample.message}</p>}
 </div>
 
        
